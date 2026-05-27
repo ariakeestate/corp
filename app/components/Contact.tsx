@@ -57,7 +57,6 @@ export default function Contact() {
                 className="space-y-5"
               >
                 <input type="hidden" name="_next" value="/thanks/" />
-                <input type="hidden" name="_subject" value="有明不動産サイトからのお問い合わせ" />
                 <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
 
                 <div className="grid sm:grid-cols-2 gap-5">
@@ -122,7 +121,8 @@ export default function Contact() {
                   </label>
                   <select
                     id="subject"
-                    name="subject"
+                    name="_subject"
+                    required
                     className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1b3a6b] focus:border-transparent bg-white"
                   >
                     <option value="">選択してください</option>
